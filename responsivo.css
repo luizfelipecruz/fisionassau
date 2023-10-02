@@ -1,0 +1,76 @@
+@media screen and (max-width:1000px) {
+    .navbar {
+        position: relative;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-toggle,
+    .menu-icon,
+    .sidebar {
+        display: none;
+    }
+
+    .logo {
+        margin: 0;
+        text-align: center;
+    }
+
+    header {
+        padding-top: 20px;
+        background-image: url(imagem2.jpg);
+        background-size: cover;
+        margin-bottom: 40px
+    }
+
+    .headline {
+        flex: 100%;
+        margin: 5%;
+        text-align: center;
+    }
+
+    .headline p {
+        text-align: center;
+
+    }
+
+    #imagemP {
+        flex: 100%;
+        margin: 5%;
+        text-align: center;
+        display: none;
+        padding-bottom: 100px;
+    }
+
+    .card {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width:999px) {
+
+    .menu-toggle,
+    .menu-icon,
+    .sidebar {
+        display: block;
+    }
+
+    nav .navbar *,
+    .logo {
+        position: none;
+    }
+    ul{
+        list-style-type: none;
+    }
+    li{
+        list-style-type: none;
+    }
+
+
+    .logo img {
+        display: flex;
+        margin-left: 20%;
+    }
+}

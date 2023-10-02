@@ -1,0 +1,79 @@
+
+
+/* Estilos para o menu lateral */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #757171b6;
+    overflow-x: hidden;
+    transition: 0.5s; /* Adiciona uma transição suave de 0,5 segundos */
+    padding-top: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    color: #fff;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li a {
+    padding: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+.sidebar li a:hover {
+    transition: 0.2s;
+background-color: #25d365c7;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+/* Estilos para o botão de menu */
+.menu-icon {
+    position: absolute;
+    display: none;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1;
+    color: #25d366;
+    transition: 0.5s;
+}
+
+
+/* Tornar o checkbox invisível */
+#menu-toggle {
+    display: none;
+}
+
+/* Estilos para o botão quando o menu está expandido */
+#menu-toggle:checked + .menu-icon {
+    left: 270px; /* Largura do menu */
+}
+
+/* Estilos para o conteúdo principal */
+.content {
+    margin-left: 0; /* Inicialmente, o menu está fechado */
+    padding: 20px;
+}
+
+/* Estilos para o conteúdo principal quando o menu está expandido */
+#menu-toggle:checked + .menu-icon + .sidebar {
+    width: 270px; /* Largura do menu */
+}
+
+#menu-toggle:checked + .menu-icon + .sidebar + .content {
+    margin-left: 270px; /* Largura do menu */
+}
