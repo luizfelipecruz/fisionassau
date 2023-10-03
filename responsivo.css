@@ -57,8 +57,8 @@
         display: block;
     }
 
-    nav .navbar *,
-    .logo {
+    nav .navbar *
+    {
         position: none;
     }
     ul{
@@ -70,8 +70,10 @@
 
 
     .logo img {
-        display: flex;
-        margin-left: 20%;
+        align-items: first center;
+        margin-top: -1%;
+        width :40%;
+        
     }
 }
 
